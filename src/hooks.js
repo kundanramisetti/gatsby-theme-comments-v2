@@ -31,7 +31,7 @@ export function useComments(id) {
           setError(error)
         },
       )
-  })
+  }, [])
 
   return { loading, error, comments }
 }
@@ -58,7 +58,7 @@ export function useCommentCount(id) {
           setError(error)
         },
       )
-  })
+  }, [])
 
   return { loading, error, count }
 }
